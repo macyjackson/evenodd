@@ -22,4 +22,7 @@ class TestEvenOdd < Minitest::Test
 	def test_input_84735384394_returns_even
 		assert_equal("even", evenoddfunction(84735384394))
 	end
+	def test_input_returns_no_wombats_allowed
+		assert_equal("no wombats allowed", evenoddfunction("wombat"))
+	end
 end
